@@ -41,3 +41,13 @@ def build_filepath(base_filepath: str, contest_name: str, problem_char: str) -> 
         source file path
     """
     return base_filepath + contest_name + "/" + problem_char + "01.py"
+
+
+def main():
+    contest_name = "AGC038"
+    num_problems = 6
+    make_srcs(contest_name, num_problems)
+
+
+if __name__ == "__main__":
+    main()
