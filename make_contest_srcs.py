@@ -1,7 +1,7 @@
 """
 Make source files for a contest
 """
-import os
+
 
 def make_srcs(contest_name: str, num_problem: int) -> int:
     """
@@ -26,7 +26,7 @@ def make_srcs(contest_name: str, num_problem: int) -> int:
     base_filepath = "./contests/"
     for problem in range(num_problem):
         filepath = build_filepath(base_filepath, contest_name, ALPHABETS[problem])
-        os.makedirs(filepath)
+        open(filepath, "a").close()
 
     return 0
 
